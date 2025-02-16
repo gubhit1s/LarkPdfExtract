@@ -19,11 +19,15 @@
   },
   "dependencies": {
     "@lark-base-open/js-sdk": "^0.3.0",
+    "@types/node": "^22.13.4",
+    "@types/pdfmake": "^0.2.11",
     "bootstrap": "^5.3.0",
     "i18next": "^23.5.1",
     "i18next-browser-languagedetector": "^7.1.0",
     "jquery": "^3.7.1",
     "jquery-i18next": "^1.2.1",
+    "jspdf": "^2.5.2",
+    "pdfmake": "^0.2.18",
     "reset-css": "^5.0.1",
     "translater.js": "^1.0.12"
   }

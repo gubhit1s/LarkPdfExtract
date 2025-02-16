@@ -29,3 +29,18 @@ language = "nodejs"
 [deployment]
 build = ["sh", "-c", "npm run build"]
 run = ["sh", "-c", "npm run preview"]
+
+[[ports]]
+localPort = 5173
+externalPort = 80
+
+[workflows]
+
+[[workflows.workflow]]
+name = "install jspdf"
+mode = "sequential"
+author = 38857702
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "npm install jspdf --save"
