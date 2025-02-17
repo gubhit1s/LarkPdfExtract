@@ -19,6 +19,11 @@ $(async function() {
     const tableId = $('#tableSelect').val();
     if (tableId) {
       const table = await bitable.base.getTableById(tableId as string);
+
+      const off = table.onRecordAdd((event) => { // Listen for field increase events.
+        off();
+        console.log('event:', event);
+      })
       const sel = await bitable.base.getSelection();
       //const fields = await table.getFieldMetaList()
       let finalPrint: string = '';
