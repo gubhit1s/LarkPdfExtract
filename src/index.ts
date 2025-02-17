@@ -307,5 +307,5 @@ function downloadFile(data: Receipt, fileName: string) {
   }
 
   pdfmake.vfs = pdfFonts.vfs;
-  var pdfDoc = pdfmake.createPdf(dd).download('test.pdf');
+  var pdfDoc = pdfmake.createPdf(dd).download('phieu_thu.pdf');
 }
